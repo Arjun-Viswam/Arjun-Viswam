@@ -20,6 +20,7 @@
   <style>
     .row{
       --bs-gutter-x:0;
+      
     }
     a {
       text-decoration: none;
@@ -28,17 +29,10 @@
     .fab {
       color: #fff;
     }
-
+    .text-center .bg-dark h6{
+      margin-bottom: 0;
+    }
   </style>
-
-
-
-
-
-
-
-
-
 
 
   <div class="bg-secondary">
@@ -200,7 +194,7 @@
           
             <div class="col-md-4">
               <div class="form-outline">
-                <label class="form-label" for="form3Example1">First name</label>
+                <label class="form-label">First name</label>
                 <input type="text" id="fname" name="Firstame" class="form-control" required />
                 <label style="display: none; color: red; font-size: 13px;;" id="err1">Enter atleast 4 charcters</label>
                 <label style="display:none; color: red; font-size: 13px;" id="err2">Enter a valid Name</label>
@@ -210,7 +204,7 @@
             
             <div class="col-md-3">
               <div class="form-outline">
-                <label class="form-label" for="form3Example2">Last name</label>
+                <label class="form-label">Last name</label>
                 <input type="text" id="lname" name="Lastname" class="form-control" required />
                 <label style="display: none; color: red; font-size: 13px;" id="err3">Enter atleast 4 charcters</label>
                 <label style="display:none; color: red; font-size: 13px;" id="err4">Enter a valid Name</label>
@@ -220,7 +214,7 @@
 
 
             <div class="form-outline col-md-7">
-              <label class="form-label" for="form3Example3">Email address</label>
+              <label class="form-label">Email address</label>
               <input type="email" id="email" name="Email" class="form-control" />
               <label style="display: none; color: red; font-size: 13px;" id="err5">Enter a valid Email address</label>
 
@@ -228,7 +222,7 @@
 
 
             <div class="form-outline col-md-7">
-              <label class="form-label" for="form3Example4">Phone Number</label>
+              <label class="form-label">Phone Number</label>
               <input type="tel" id="number" name="number" class="form-control" />
               <label style="display:none; color: red; font-size: 13px;" id="err6">Enter a valid Number</label>
 
@@ -251,8 +245,9 @@
 
 
   <section>
+    <footer class="text-center">
     <div class="bg-dark">
-      <footer class="text-center">
+      
         <h5>&nbsp;</h5>
         <a href="https://en-gb.facebook.com/login/" target="_blank">
           <i class="fab fa-facebook-f fa-lg "></i>
@@ -269,17 +264,19 @@
         <a href="https://www.linkedin.com/login" target="_blank">
           <i class="fab fa-linkedin-in fa-lg"></i>
         </a>&nbsp;
-      </footer>
+      
+
       <h5>&nbsp;</h5>
 
 
 
 
-      <h6 class="container text-center text-white">Designed and built with all the love in the world by the Arjun's team with the
+      <h6 style=" padding-bottom: 2rem;"  class="container text-center text-white">Designed and built with all the love in the world by the Arjun's team with the
         help of our contributors.<br>
 
         Currently v5.0.0-beta3. Code licensed MIT, docs CC BY 3.0.</h6>
     </div>
+  </footer>
   </section>
 
 

@@ -8,14 +8,17 @@
         }
         else {
           $("#err1").hide()
+         
           nflag=0
         }
         if (/^[A-Za-z ]+$/.test(text) == false) {
           $("#err2").show()
+          
           nflag=1
         }
         else {
           $("#err2").hide()
+          
           nflag=0
         }
       })
@@ -31,11 +34,11 @@
           nflag=0
         }
         if (/^[A-Za-z ]+$/.test(text) == false) {
-          $("#err4  ").show()
+          $("#err4").show()
           nflag=1
         }
         else {
-          $("#err4  ").hide()
+          $("#err4").hide()
           nflag=0
         }
       })
@@ -69,7 +72,7 @@
           pflag=1
         }
       })
-      $("#signup    ").click(function(){
+      $("#signup").click(function(){
         if(nflag==0 && pflag==0 && eflag==0)
         {
           alert("Message is sent")
